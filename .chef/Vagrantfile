@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 $ip1="192.168.33.10"
 $ip2="192.168.33.11"
-$dir="d:/lab_chef"
+$dir="d:/LAB"
 
 Vagrant.configure(2) do |config|
 
@@ -16,11 +16,7 @@ Vagrant.configure(2) do |config|
 		vb1.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
 	end
     v1.vm.synced_folder $dir, "/lab_chef"
-	v1.vm.provision "shell" do |s|
-    p = File.expand_path("../", __FILE__)
-    s.path = p + "\\script.sh"
-    end 
-    
+    v1.vm.provision "shell", path: "d:/lab_chef/script.sh"
   end
   
     config.vm.define "virtual2" do |v2|
