@@ -1,0 +1,47 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+$ip1="192.168.33.10"
+$ip2="192.168.33.11"
+$dir="d:/lab_chef"
+
+Vagrant.configure(2) do |config|
+
+  config.vm.define "virtual1" do |v1|
+    v1.vm.box = "ubuntu/trusty32"
+    v1.vm.network "private_network", ip: $ip1
+    v1.vm.hostname = "virtual1.test.by"
+    v1.vm.provider "virtualbox1" do |vb1|
+		vb1.name = "virtual1"
+		vb1.customize ["modifyvm", :id, "--memory", 1024] 
+		vb1.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+	end
+    v1.vm.synced_folder $dir, "/lab_chef"
+	v1.vm.provision "shell" do |s|
+    p = File.expand_path("../", __FILE__)
+    s.path = p + "\\script.sh"
+    end 
+    
+  end
+  
+    config.vm.define "virtual2" do |v2|
+    v2.vm.box = "ubuntu/trusty32"
+    v2.vm.network "private_network", ip: $ip2
+    v2.vm.hostname = "virtual2.test.by"
+    v2.vm.provider "virtualbox2" do |vb2|
+		vb2.name = "virtual2"
+		vb2.customize ["modifyvm", :id, "--memory", 1024] 
+		vb2.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+	end
+    config.vm.provision "chef_solo" do |chef|
+      chef.cookbooks_path = $dir+"/cookbooks"
+      chef.add_recipe "nginx::default"
+      chef.add_recipe "iptables::default"
+      chef.json = {
+        "nginx" => {
+          "default_root" => "/usr/lab_chef/nginx/html"
+        }
+      }
+    end
+    v2.vm.synced_folder $dir, "/lab_chef"
+  end
+end
