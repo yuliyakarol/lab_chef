@@ -1,11 +1,10 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$ip1="192.168.33.10"
-$ip2="192.168.33.11"
+$vm5_ip="192.168.33.10"
+$vm6_ip="192.168.33.11"
 $dir="d:/lab_chef"
 $script = <<EOF
-
 sudo -i
 yum update
 yum install wget curl -y
@@ -20,17 +19,14 @@ rvm requirements run
 rvm install 2.2.4
 rvm use 2.2.4 --default
 
-echo installing chef client
- curl -L https://www.opscode.com/chef/install.sh | bash
 
-echo installing chefdk
- wget https://packages.chef.io/stable/el/6/chefdk-0.12.0-1.el6.x86_64.rpm
- rpm –ivh chefdk-0.12.0-1.el6.x86_64.rpm
+rpm -ivh chef-12.9.38-1.el6.x86_64.rpm
 
-echo create directories for chef and ssh-keys
- mkdir -p /root/{.chef,cookbooks,.ssh}
+rpm -ivh chefdk-0.12.0-1.el6.x86_64.rpm
 
-echo create solo.rb file
+mkdir -p /root/{.chef,cookbooks,.ssh}
+knife configure initial
+
 cat > /root/.chef/solo.rb <<FL
 log_level :debug
 file_cache_path "/root/.chef/"
@@ -39,22 +35,16 @@ json_attribs "/root/.chef/runlist.json"
 log_location "/lab_chef/chef-solo.log"
 FL
 
-echo cd to nginx and run berks install
-cd /lab_chef/cookbooks
-knife cookbook upload apt
-knife cookbook create nginx
-knife cookbook create iptables
-
-/opt/chef/embedded/bin/gem install berkshelf --no-ri --no-rdoc
 cd /lab_chef/cookbooks/nginx
+berks install
+
 berks package
 tar -xf $(ls | grep *tar.gz) -C /lab_chef/
-
 echo Create runlist file
 cat > /root/.chef/runlist.json <<FL
 { 
 "run_list": ["recipe[nginx::default]", "recipe[iptables::default]"],
-  "nginx": {"default_root":"/usr/lab_chef/nginx/html"} 
+  "nginx": {"default_root":"/usr/share/nginx/html"} 
 } 
 FL
 echo Run chef-solo
@@ -93,7 +83,7 @@ Vagrant.configure(2) do |config|
       chef.add_recipe "iptables::default"
       chef.json = {
         "nginx" => {
-          "default_root" => "/usr/lab_chef/nginx/html"
+         "default_root" => "/usr/lab_chef/nginx/html"
         }
       }
     end
