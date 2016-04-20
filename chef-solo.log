@@ -1,0 +1,568 @@
+# Logfile created on 2016-04-20 17:03:17 +0000 by logger.rb/44203
+[2016-04-20T17:03:17+00:00] INFO: Forking chef instance to converge...
+[2016-04-20T17:03:17+00:00] DEBUG: Fork successful. Waiting for new chef pid: 18598
+[2016-04-20T17:03:17+00:00] DEBUG: Forked instance now converging
+[2016-04-20T17:03:17+00:00] INFO: *** Chef 12.9.38 ***
+[2016-04-20T17:03:17+00:00] INFO: Platform: x86_64-linux
+[2016-04-20T17:03:17+00:00] INFO: Chef-client pid: 18598
+[2016-04-20T17:03:17+00:00] DEBUG: Chef-client request_id: 6e181262-1117-4469-befc-d4c944e0ea36
+[2016-04-20T17:03:17+00:00] DEBUG: Could not load sigar gem. Skipping NetworkRoutes plugin
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin Mono ran 'mono -V' and failed #<Errno::ENOENT: No such file or directory - mono>
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin Mono threw #<Ohai::Exceptions::Exec: No such file or directory - mono>
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/mono.rb:29:in `block (2 levels) in <main>'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:17+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:17+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin Go ran 'go version' and failed #<Errno::ENOENT: No such file or directory - go>
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin Go threw #<Ohai::Exceptions::Exec: No such file or directory - go>
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/go.rb:23:in `block (2 levels) in <main>'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:17+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:17+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin Groovy ran 'groovy -v' and failed #<Errno::ENOENT: No such file or directory - groovy>
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin Groovy threw #<Ohai::Exceptions::Exec: No such file or directory - groovy>
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/groovy.rb:29:in `block (2 levels) in <main>'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:17+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:17+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin Perl ran 'perl -V:version -V:archname' and returned 0
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin C ran 'gcc -v' and returned 0
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin C ran '/lib/libc.so.6' and failed #<Errno::ENOENT: No such file or directory - /lib/libc.so.6>
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin C ran '/lib64/libc.so.6' and returned 0
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin C ran 'cl /?' and returned 127
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin C ran 'devenv.com /?' and returned 127
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin C ran 'xlc -qversion' and failed #<Errno::ENOENT: No such file or directory - xlc>
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin C ran 'cc -V -flags' and returned 0
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin C ran 'what /opt/ansic/bin/cc' and failed #<Errno::ENOENT: No such file or directory - what>
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin PHP ran 'php -v' and failed #<Errno::ENOENT: No such file or directory - php>
+[2016-04-20T17:03:17+00:00] DEBUG: Plugin PHP threw #<Ohai::Exceptions::Exec: No such file or directory - php>
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/php.rb:29:in `block (2 levels) in <main>'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:17+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:17+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:17+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:17+00:00] DEBUG: No data to collect for plugin Powershell. Continuing...
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Python ran 'python -c "import sys; print (sys.version)"' and returned 0
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Elixir ran 'elixir -v' and failed #<Errno::ENOENT: No such file or directory - elixir>
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Elixir threw #<Ohai::Exceptions::Exec: No such file or directory - elixir>
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/elixir.rb:25:in `block (2 levels) in <main>'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Rust ran 'rustc --version' and failed #<Errno::ENOENT: No such file or directory - rustc>
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Rust threw #<Ohai::Exceptions::Exec: No such file or directory - rustc>
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/rust.rb:25:in `block (2 levels) in <main>'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Java ran 'java -mx64m -version' and failed #<Errno::ENOENT: No such file or directory - java>
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Java threw #<Ohai::Exceptions::Exec: No such file or directory - java>
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/java.rb:25:in `get_java_info'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/java.rb:68:in `block (2 levels) in <main>'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Scala ran 'scala -version' and failed #<Errno::ENOENT: No such file or directory - scala>
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Scala threw #<Ohai::Exceptions::Exec: No such file or directory - scala>
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/scala.rb:27:in `block (2 levels) in <main>'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Lua ran 'lua -v' and returned 0
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Ruby ran 'ruby -e "require 'rbconfig'; puts %Q(platform=#{RUBY_PLATFORM},version=#{RUBY_VERSION},release_date=#{RUBY_RELEASE_DATE},target=#{RbConfig::CONFIG['target']},target_cpu=#{RbConfig::CONFIG['target_cpu']},target_vendor=#{RbConfig::CONFIG['target_vendor']},target_os=#{RbConfig::CONFIG['target_os']},host=#{RbConfig::CONFIG['host']},host_cpu=#{RbConfig::CONFIG['host_cpu']},host_os=#{RbConfig::CONFIG['host_os']},host_vendor=#{RbConfig::CONFIG['host_vendor']},bin_dir=#{RbConfig::CONFIG['bindir']},ruby_bin=#{::File.join(RbConfig::CONFIG['bindir'], RbConfig::CONFIG['ruby_install_name'])},)"' and returned 0
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Ruby ran 'ruby -e "require 'rbconfig'; require 'rubygems'; puts ::Gem.default_exec_format % 'gem'"' and returned 0
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Ruby ran 'ruby -e "require 'rbconfig'; puts %x{/usr/local/rvm/rubies/ruby-2.2.4/bin/ruby /usr/local/rvm/rubies/ruby-2.2.4/bin/gem env gemdir}.chomp!"' and returned 0
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Erlang ran 'erl +V' and failed #<Errno::ENOENT: No such file or directory - erl>
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Erlang threw #<Ohai::Exceptions::Exec: No such file or directory - erl>
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/erlang.rb:28:in `block (2 levels) in <main>'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Nodejs ran 'node -v' and failed #<Errno::ENOENT: No such file or directory - node>
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Nodejs threw #<Ohai::Exceptions::Exec: No such file or directory - node>
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/nodejs.rb:29:in `block (2 levels) in <main>'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:18+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:18+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Kernel ran 'uname -s' and returned 0
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Kernel ran 'uname -r' and returned 0
+[2016-04-20T17:03:18+00:00] DEBUG: Plugin Kernel ran 'uname -v' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Kernel ran 'uname -m' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Kernel ran 'uname -p' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Kernel ran 'uname -o' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Kernel ran 'env lsmod' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Skipping LSB, cannot find /etc/lsb-release or /usr/bin/lsb_release
+[2016-04-20T17:03:19+00:00] DEBUG: Virtualization plugin: did not find nova
+[2016-04-20T17:03:19+00:00] DEBUG: Virtualization plugin: did not find lxc-version
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Virtualbox ran 'VBoxControl guestproperty enumerate' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin DMI ran 'dmidecode' and failed #<Errno::ENOENT: No such file or directory - dmidecode>
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin DMI threw #<Ohai::Exceptions::Exec: No such file or directory - dmidecode>
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:43:in `rescue in shell_out'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mixin/command.rb:37:in `shell_out'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/plugins/dmi.rb:47:in `block (2 levels) in <main>'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `instance_eval'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin/versionvii.rb:90:in `run_plugin'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:98:in `run'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/dsl/plugin.rb:169:in `safe_run'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:84:in `run_v7_plugin'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/runner.rb:43:in `run_plugin'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:98:in `block in run_plugins'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `each'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:97:in `run_plugins'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/system.rb:75:in `all_plugins'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:558:in `run_ohai'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:263:in `run'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+[2016-04-20T17:03:19+00:00] DEBUG: /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+[2016-04-20T17:03:19+00:00] DEBUG: /usr/bin/chef-solo:51:in `load'
+[2016-04-20T17:03:19+00:00] DEBUG: /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:19+00:00] DEBUG: ec2 plugin: has_ec2_xen_uuid? == false
+[2016-04-20T17:03:19+00:00] DEBUG: ec2 plugin: has_ec2_dmi? == false
+[2016-04-20T17:03:19+00:00] DEBUG: ec2 plugin: has_amazon_org? == false
+[2016-04-20T17:03:19+00:00] DEBUG: ec2 plugin: looks_like_ec2? == false
+[2016-04-20T17:03:19+00:00] DEBUG: gce mixin: can_metadata_connect? failed setting up socket: getaddrinfo: Name or service not known
+[2016-04-20T17:03:19+00:00] DEBUG: gce plugin: looks_like_gce? == false
+[2016-04-20T17:03:19+00:00] DEBUG: default route table is 'main'
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Network ran 'ip addr' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Network ran 'ip -d -s link' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Network ran 'ip -f inet neigh show' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Network ran 'ip -o -f inet route show table main' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing 10.0.2.0/24 dev eth0  proto kernel  scope link  src 10.0.2.15
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing 192.168.33.0/24 dev eth1  proto kernel  scope link  src 192.168.33.10
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing 169.254.0.0/16 dev eth0  scope link  metric 1002
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing 169.254.0.0/16 dev eth1  scope link  metric 1003
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing default via 10.0.2.2 dev eth0
+[2016-04-20T17:03:19+00:00] DEBUG: default_interface set to eth0
+[2016-04-20T17:03:19+00:00] DEBUG: default_gateway set to 10.0.2.2
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Network ran 'ip -f inet6 neigh show' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Network ran 'ip -o -f inet6 route show table main' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable ::/96 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable ::ffff:0.0.0.0/96 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable 2002:a00::/24 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable 2002:7f00::/24 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable 2002:a9fe::/32 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable 2002:ac10::/28 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable 2002:c0a8::/32 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable 2002:e000::/19 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing unreachable 3ffe:ffff::/32 dev lo  metric 1024  error -101 mtu 65536 advmss 65476 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing fe80::/64 dev eth0  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing fe80::/64 dev eth1  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
+[2016-04-20T17:03:19+00:00] DEBUG: Unable to determine 'default_inet6_interface' as no default routes were found for that interface family
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Network ran '/sbin/ethtool eth0' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: Settings for eth0:
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supported ports: [ TP ]
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supported link modes:   10baseT/Half 10baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	                        100baseT/Half 100baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	                        1000baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supported pause frame use: No
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supports auto-negotiation: Yes
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Advertised link modes:  10baseT/Half 10baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	                        100baseT/Half 100baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	                        1000baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Advertised pause frame use: No
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Advertised auto-negotiation: Yes
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Speed: 1000Mb/s
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Duplex: Full
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Port: Twisted Pair
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	PHYAD: 0
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Transceiver: internal
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Auto-negotiation: on
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	MDI-X: off (auto)
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supports Wake-on: umbg
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Wake-on: d
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Current message level: 0x00000007 (7)
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 			       drv probe link
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Link detected: yes
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Network ran '/sbin/ethtool eth1' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: Settings for eth1:
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supported ports: [ TP ]
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supported link modes:   10baseT/Half 10baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	                        100baseT/Half 100baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	                        1000baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supported pause frame use: No
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supports auto-negotiation: Yes
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Advertised link modes:  10baseT/Half 10baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	                        100baseT/Half 100baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	                        1000baseT/Full 
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Advertised pause frame use: No
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Advertised auto-negotiation: Yes
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Speed: 1000Mb/s
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Duplex: Full
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Port: Twisted Pair
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	PHYAD: 0
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Transceiver: internal
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Auto-negotiation: on
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	MDI-X: off (auto)
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Supports Wake-on: umbg
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Wake-on: d
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Current message level: 0x00000007 (7)
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 			       drv probe link
+[2016-04-20T17:03:19+00:00] DEBUG: Parsing ethtool output: 	Link detected: yes
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Rackspace ran 'xenstore-read vm-data/provider_data/provider' and failed #<Errno::ENOENT: No such file or directory - xenstore-read>
+[2016-04-20T17:03:19+00:00] DEBUG: eucalyptus plugin: has_euca_mac? == false
+[2016-04-20T17:03:19+00:00] DEBUG: eucalyptus plugin: looks_like_euca? == false
+[2016-04-20T17:03:19+00:00] DEBUG: linode plugin: looks_like_linode? == false
+[2016-04-20T17:03:19+00:00] DEBUG: NOT ohai openstack
+[2016-04-20T17:03:19+00:00] DEBUG: azure plugin: No hints present for azure and doesn't appear to be azure.
+[2016-04-20T17:03:19+00:00] DEBUG: digitalocean plugin: No hints present for and doesn't look like digitalocean
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Filesystem ran 'df -P' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Filesystem ran 'df -iP' and returned 0
+[2016-04-20T17:03:19+00:00] DEBUG: Plugin Filesystem ran 'mount' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Filesystem ran 'lsblk -P -n -o NAME,FSTYPE' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Filesystem ran 'lsblk -P -n -o NAME,UUID' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Filesystem ran 'lsblk -P -n -o NAME,LABEL' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Could not load sigar gem. Skipping NetworkListeners plugin
+[2016-04-20T17:03:20+00:00] DEBUG: [inet] Using default interface eth0 and default gateway 10.0.2.2 to set the default ip to 10.0.2.15
+[2016-04-20T17:03:20+00:00] DEBUG: [inet6] no default interface, picking the first ipaddress
+[2016-04-20T17:03:20+00:00] DEBUG: ipaddress and ip6address are set from different interfaces (eth0 & eth1)
+[2016-04-20T17:03:20+00:00] DEBUG: No data to collect for plugin Drivers. Continuing...
+[2016-04-20T17:03:20+00:00] DEBUG: softlayer plugin: looks_like_softlayer? == false
+[2016-04-20T17:03:20+00:00] DEBUG: ip_scopes: cannot load gem, plugin disabled: cannot load such file -- ipaddr_extensions
+[2016-04-20T17:03:20+00:00] DEBUG: No data to collect for plugin SystemProfile. Continuing...
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Filesystem2 ran 'df -P' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Filesystem2 ran 'df -iP' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Filesystem2 ran 'mount' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Filesystem2 ran 'lsblk -n -P -o NAME,UUID,LABEL,FSTYPE' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Hostname ran 'hostname -s' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Hostname ran 'hostname' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: Plugin Hostname ran 'hostname --fqdn' and returned 0
+[2016-04-20T17:03:20+00:00] DEBUG: No data to collect for plugin Zpools. Continuing...
+[2016-04-20T17:03:23+00:00] DEBUG: Plugin Packages ran 'rpm -qa --queryformat \%\{NAME\}\\t\%\{VERSION\}\\t\%\{RELEASE\}\\n' and returned 0
+[2016-04-20T17:03:23+00:00] DEBUG: Sessions plugin: did not find loginctl
+[2016-04-20T17:03:23+00:00] DEBUG: Building node object for virtual1.test.by
+[2016-04-20T17:03:23+00:00] DEBUG: Extracting run list from JSON attributes provided on command line
+[2016-04-20T17:03:23+00:00] INFO: Setting the run_list to ["recipe[nginx::default]", "recipe[iptables::default]"] from CLI options
+[2016-04-20T17:03:23+00:00] DEBUG: Applying attributes from json file
+[2016-04-20T17:03:23+00:00] DEBUG: Platform is centos version 6.7
+[2016-04-20T17:03:23+00:00] INFO: Run List is [recipe[nginx::default], recipe[iptables::default]]
+[2016-04-20T17:03:23+00:00] INFO: Run List expands to [nginx::default, iptables::default]
+[2016-04-20T17:03:23+00:00] INFO: Starting Chef Run for virtual1.test.by
+[2016-04-20T17:03:23+00:00] INFO: Running start handlers
+[2016-04-20T17:03:23+00:00] INFO: Start handlers complete.
+[2016-04-20T17:03:23+00:00] DEBUG: Re-raising exception: Chef::Exceptions::CookbookNotFound - Cookbook nginx not found. If you're loading nginx from another cookbook, make sure you configure the dependency in your metadata
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/cookbook/cookbook_collection.rb:39:in `block in initialize'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mash.rb:77:in `yield'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mash.rb:77:in `default'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mash.rb:77:in `default'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:276:in `[]'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:276:in `each_cookbook_dep'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:255:in `add_cookbook_with_deps'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:88:in `block in cookbook_order'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:86:in `each'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:86:in `cookbook_order'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:98:in `compile_libraries'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:71:in `compile'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context.rb:176:in `load'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/policy_builder/expand_node_object.rb:97:in `setup_run_context'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:508:in `setup_run_context'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:278:in `run'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+  /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+  /usr/bin/chef-solo:51:in `load'
+  /usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:23+00:00] ERROR: Running exception handlers
+[2016-04-20T17:03:23+00:00] ERROR: Exception handlers complete
+[2016-04-20T17:03:23+00:00] FATAL: Stacktrace dumped to /root/.chef/chef-stacktrace.out
+[2016-04-20T17:03:23+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2016-04-20T17:03:23+00:00] DEBUG: Chef::Exceptions::CookbookNotFound: Cookbook nginx not found. If you're loading nginx from another cookbook, make sure you configure the dependency in your metadata
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/cookbook/cookbook_collection.rb:39:in `block in initialize'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mash.rb:77:in `yield'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mash.rb:77:in `default'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/ohai-8.14.0/lib/ohai/mash.rb:77:in `default'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:276:in `[]'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:276:in `each_cookbook_dep'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:255:in `add_cookbook_with_deps'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:88:in `block in cookbook_order'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:86:in `each'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:86:in `cookbook_order'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:98:in `compile_libraries'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context/cookbook_compiler.rb:71:in `compile'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/run_context.rb:176:in `load'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/policy_builder/expand_node_object.rb:97:in `setup_run_context'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:508:in `setup_run_context'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/client.rb:278:in `run'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:285:in `block in fork_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:273:in `fork_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:238:in `block in run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:226:in `run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:301:in `block in interval_run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `loop'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:290:in `interval_run_chef_client'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application/solo.rb:269:in `run_application'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/application.rb:58:in `run'
+/opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/bin/chef-solo:25:in `<top (required)>'
+/usr/bin/chef-solo:51:in `load'
+/usr/bin/chef-solo:51:in `<main>'
+[2016-04-20T17:03:23+00:00] ERROR: Cookbook nginx not found. If you're loading nginx from another cookbook, make sure you configure the dependency in your metadata
+[2016-04-20T17:03:23+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)

@@ -1,0 +1,4 @@
+{ 
+"run_list": ["recipe[nginx::default]", "recipe[iptables::default]"],
+  "nginx": {"default_root":"/usr/share/nginx/html"} 
+} 
