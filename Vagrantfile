@@ -1,8 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$vm5_ip="192.168.33.10"
-$vm6_ip="192.168.33.11"
+$ip1="192.168.33.10"
+$ip2="192.168.33.11"
 $dir="d:/lab_chef"
 $script = <<EOF
 sudo -i
