@@ -18,14 +18,15 @@ rvm reload
 rvm requirements run
 rvm install 2.2.4
 rvm use 2.2.4 --default
+iptables -I INPUT 5 -i eth0 -p tcp --dport 80 -m state --state NEW,ESTABLISHED -j ACCEPT
+service iptables save
+service iptables restart
 
+ curl -L https://www.opscode.com/chef/install.sh | bash
 
-rpm -ivh chef-12.9.38-1.el6.x86_64.rpm
-
-rpm -ivh chefdk-0.12.0-1.el6.x86_64.rpm
-
+wget "https://packages.chef.io/stable/el/6/chefdk-0.12.0-1.el6.x86_64.rpm"
+rpm -Uvh chefdk-0.12.0-1.el6.x86_64.rpm
 mkdir -p /root/{.chef,cookbooks,.ssh}
-knife configure initial
 
 cat > /root/.chef/solo.rb <<FL
 log_level :debug
@@ -35,8 +36,17 @@ json_attribs "/root/.chef/runlist.json"
 log_location "/lab_chef/chef-solo.log"
 FL
 
+cd /lab_chef/cookbooks
+knife cookbook upload apt
+knife cookbook create nginx
+knife cookbook create iptables
+
 cd /lab_chef/cookbooks/nginx
-berks install
+rvm gemset create berks
+rvm gemset use berks
+gem install chef berkshelf --no-ri --no-rdoc
+vagrant config.berkshelf.enabled = true
+vagrant config.berkshelf.berksfile_path = "~/lab_chef/Berksfile"
 
 berks package
 tar -xf $(ls | grep *tar.gz) -C /lab_chef/
